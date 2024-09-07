@@ -282,6 +282,12 @@ footer a:hover{
 
 /* RESPONSIVE */
 @media screen and (max-width: 910px){
+    section{
+    padding: 30px 15px 15px 15px;
+    }
+    .mobile {
+        padding: 15px 15px 15px 15px;
+    }
     .cards-destaques{
         flex-direction: column;
     }
