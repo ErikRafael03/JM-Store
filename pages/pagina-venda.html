@@ -44,7 +44,9 @@
 
   <div class="mobile">
     <div class="mobile2">
-      <a href="../index.html"><h1>JM Store</h1></a>
+      <a href="../index.html">
+        <h1>JM Store</h1>
+      </a>
       <div class="btn-abir-menu" id="btn-menu">
         <i class="bi bi-list"></i>
       </div>
@@ -66,16 +68,77 @@
     </div>
   </div>
 
-  <section>
-    <div class="venda-camisa">
-      <div class="card-venda">
-        <div class="card-img">
-          <img src="../assets/camisa-preta1.png" id="img" alt="...">
-        </div>
-        </div>
+  <section class="venda-camisa">
+    <div class="teste">
+      <div class="thumbnails">
+        <img src="../assets/camisa-preta1.png" alt="Miniatura 1" onclick="changeImage('../assets/camisa-preta1.png')">
+        <img src="../assets/camisa-preta-logo.png" alt="Miniatura 1"
+          onclick="changeImage('../assets/camisa-preta-logo.png')">
+        <img src="../assets/camisa-preta-fundo.png" alt="Miniatura 2"
+          onclick="changeImage('../assets/camisa-preta-fundo.png')">
+        <img src="../assets/camisa-preta-frente-verso.png" alt="Miniatura 3"
+          onclick="changeImage('../assets/camisa-preta-frente-verso.png')">
+      </div>
+      <div class="main-image">
+        <img id="mainDisplay" src="../assets/camisa-preta1.png" alt="Camiseta Juventude">
+      </div>
+    </div>
+
+    <div class="conteudo-camisa">
+      <h3>Camiseta Juventude Preta</h3>
+      <br>
+      <h4>R$ 50,00</h4>
+      <p class="product-size">Tamanho:</p>
+      <div class="size-options">
+        <button class="size-btn" data-size="P">P</button>
+        <button class="size-btn" data-size="M">M</button>
+        <button class="size-btn" data-size="G">G</button>
+        <button class="size-btn" data-size="GG">GG</button>
+      </div>
+      <div class="div-btn">
+      <button type="submit" class="btn btn-primary mb-3" id="btn-comprar">Adicionar ao carrinho <i class="bi bi-cart"></i></button>
+      </div>
     </div>
   </section>
 
+  <section class="sobre-camisa">
+    <div class="conteudo-camisa2">
+      <h4>Camiseta Manga Curta Juventude em Movimento</h4>
+      <p>
+        Versátil, básica e essencial, a Camiseta Manga Curta Juventude em Movimento é perfeita para o seu dia a dia.
+        Com uma estampa frontal autêntica e etiqueta exclusiva da Juventude em Movimento na barra, ela une conforto e
+        estilo em uma única peça. Sinta a qualidade e faça dela sua escolha para qualquer ocasião!
+      </p>
+      <p>
+        Detalhes do produto:
+      <ul>
+        <li>Meia malha de algodão</li>
+        <li>Estampa Juventude em Movimento frontal</li>
+        <li>Estampa Juventude em Movimento traseira</li>
+        <li>Etiqueta exclusiva Juventude em Movimento na barra</li>
+        <li>Composição: 100% Algodão</li>
+      </ul>
+
+      </p>
+    </div>
+    <img src="../assets/foto-meninas.jpeg" id="img-camisa" alt="Foto Camisa Juventude">
+  </section>
+
+  <footer>
+    <div class="title-footer">
+      <h2>JM Store</h2>
+    </div>
+
+    <div class="contato-footer">
+      <h5>Juventude em Movimento</h5>
+      <p>Copyright &copy; <a href="https://erikrafael03.github.io/Portfolio1.0/">Erik Rafael</a></p>
+    </div>
+
+    <div class="icons-footer">
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-whatsapp"></i>
+    </div>
+  </footer>
   <script src="../js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

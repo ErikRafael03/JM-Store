@@ -10,7 +10,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #000000;
+    background-color:#005532;
     border-radius: 10px;
 }
 
@@ -36,7 +36,7 @@ header a{
     text-decoration: none;
     color: black;
 }
-li{
+header li{
     display: inline-block;
     margin: 15px;
     margin-top: 30px;
@@ -286,7 +286,7 @@ footer a:hover{
     padding: 30px 15px 15px 15px;
     }
     .mobile {
-        padding: 15px 15px 15px 15px;
+        padding: 15px;
     }
     .cards-destaques{
         flex-direction: column;
@@ -332,5 +332,8 @@ footer a:hover{
     }
     .icons-footer{
         margin-top: 10px;
+    }
+    .card-body p{
+        width: 70%;
     }
 }
