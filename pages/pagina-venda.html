@@ -70,7 +70,7 @@
 
   <section class="venda-camisa">
     <div class="teste">
-      <div class="thumbnails">
+      <!-- <div class="thumbnails">
         <img src="../assets/camisa-preta1.png" alt="Miniatura 1" onclick="changeImage('../assets/camisa-preta1.png')">
         <img src="../assets/camisa-preta-logo.png" alt="Miniatura 1"
           onclick="changeImage('../assets/camisa-preta-logo.png')">
@@ -78,16 +78,23 @@
           onclick="changeImage('../assets/camisa-preta-fundo.png')">
         <img src="../assets/camisa-preta-frente-verso.png" alt="Miniatura 3"
           onclick="changeImage('../assets/camisa-preta-frente-verso.png')">
-      </div>
+      </div> -->
+      <div class="thumbnails">
+        <img class="thumbnail" src="" alt="Miniatura 1">
+        <img class="thumbnail" src="" alt="Miniatura 2">
+        <img class="thumbnail" src="" alt="Miniatura 3">
+        <img class="thumbnail" src="" alt="Miniatura 4">
+    </div>
+
       <div class="main-image">
-        <img id="mainDisplay" src="../assets/camisa-preta1.png" alt="Camiseta Juventude">
+        <img id="product-main-image" src="../assets/camisa-preta1.png" alt="Camiseta Juventude">
       </div>
     </div>
 
     <div class="conteudo-camisa">
-      <h3>Camiseta Juventude Preta</h3>
+      <h3 id="product-title">Camiseta Juventude Preta</h3>
       <br>
-      <h4>R$ 50,00</h4>
+      <h4 id="product-price">R$ 50,00</h4>
       <p class="product-size">Tamanho:</p>
       <div class="size-options">
         <button class="size-btn" data-size="P">P</button>
