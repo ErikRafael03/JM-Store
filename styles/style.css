@@ -31,6 +31,26 @@ header{
     font-size: 12pt;
     padding: 0px 30px 0px 30px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.116);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+
+    background-color: transparent;
+    transition: background-color 0.5s;
+}
+
+/* Cor do header após o scroll */
+header.scrolled {
+    background-color: #f0f0f0;
+}
+header.scrolled a{
+    color: rgb(0, 0, 0);
+}
+header.scrolled a:hover{
+    color: #005532;
+}
+header.scrolled i:hover{
+    color: #005532;
 }
 header a{
     text-decoration: none;
@@ -49,7 +69,7 @@ header li{
     text-decoration: none;
 }
 .nav-links a:hover {
-    color: #017143;
+    color: #ffffff;
 }
 .nav-icons{
     color: black;
@@ -60,7 +80,7 @@ header li{
 
 }
 .nav-icons i:hover{
-    color: #017143;
+    color: #292929;
 }
 
 /* ----------MENU DESKTOP----------- */
@@ -160,7 +180,7 @@ header li{
     display: flex;
     color: #ffffff;
     justify-content: space-between;
-    /* padding: 30px 80px 15px 80px; */
+    padding-bottom: 0px;
 }
 .inicio h1{
     font-weight: 600;
@@ -175,6 +195,7 @@ header li{
     font-size: 35pt;
     text-align: center;
     padding-left: 10%;
+    padding-top: 100px;
 }
 .title-inicio{
     padding-top: 15%;
@@ -224,9 +245,6 @@ section{
     display: flex;
     justify-content: space-between;
 }
-.card-body p{
-    font-weight: bold;
-}
 .card-body a{
     text-decoration: none;
     color: black;
@@ -234,11 +252,16 @@ section{
     font-weight: 300;
     width: 50%;
 }
-.card-body a:hover{
+#card-name{
+    color: #000000;
+    cursor: pointer;
+}
+#card-name:hover{
     text-decoration: underline
 }
-#card-text{
+#card-price{
     width: 40%;
+    font-weight: bold;
 }
 .fale-conosco{
     margin: 40px 0px 40px 0px;
@@ -365,6 +388,10 @@ footer a:hover{
 }
 @media screen and (max-width: 500px){
     .title-inicio{
-        padding-top: 10%;
+        padding-top: 8%;
+        /* margin-right: 8%; */
+    }
+    .inicio img{
+        width: 50%;
     }
 }
