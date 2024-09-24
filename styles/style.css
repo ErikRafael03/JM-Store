@@ -407,4 +407,7 @@ footer a:hover{
     #card-name{
         width: 100%;
     }
+        #card-price{
+        width: 100%;
+    }
 }
