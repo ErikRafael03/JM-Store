@@ -86,6 +86,9 @@ function loadProduct(productKey) {
 function redirectToBuyPage(productKey) {
     window.location.href = `../pages/pagina-venda.html?product=${productKey}`;
 }
+function redirectToBuyPageIndex(productKey) {
+    window.location.href = `./pages/pagina-venda.html?product=${productKey}`;
+}
 
 // Capturar o parâmetro da URL
 function getProductFromUrl() {

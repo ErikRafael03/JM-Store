@@ -1,20 +1,8 @@
-.cart .badge {
-    position: absolute;
-    top: -5px;
-    right: -10px;
-    background-color: red;
-    color: white;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    display: none; /* Oculta o badge por padrão */
-}
 .inicioC{
     position: relative;
+}
+.inicioC .nav-links a:hover{
+    color: #202020;
 }
 .venda-camisa{
     display: flex;
@@ -106,6 +94,7 @@
     border: 1px solid #ccc;
     font-size: 16px;
     cursor: pointer;
+    color: #000;
 }
 
 .size-btn:hover {

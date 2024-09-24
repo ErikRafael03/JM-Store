@@ -154,7 +154,7 @@ header li{
 .menu-mobile nav ul li a {
     color: #ffffff;
     font-size: 14pt;
-    padding: 1px 8%;
+    padding: 15px 8%;
     font-weight: 200;
     display: block;
     text-decoration: none;
@@ -187,6 +187,10 @@ header li{
 }
 .inicio span{
     color:#000000;
+}
+.inicio p{
+    color: white;
+    font-size: 14pt;
 }
 .inicio img{
     width: 40%;
@@ -387,11 +391,20 @@ footer a:hover{
     }
 }
 @media screen and (max-width: 500px){
+    .inicio{
+        padding-top: 0px;
+    }
     .title-inicio{
-        padding-top: 8%;
+        padding-top: 10%;
         /* margin-right: 8%; */
     }
     .inicio img{
         width: 50%;
+    }
+    .card-body{
+        display: block;
+    }
+    #card-name{
+        width: 100%;
     }
 }
