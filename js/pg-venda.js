@@ -121,12 +121,26 @@ function addToCart() {
 
     // Verifica se todos os dados estão preenchidos
     if (!productSize) {
-        alert('❌ Por favor, selecione o tamanho do produto!');
+        // alert('❌ Por favor, selecione o tamanho do produto!');
+        Swal.fire({
+            icon: "error",
+            title: "Por favor, selecione o tamanho do produto!",
+            customClass: {
+                confirmButton: 'custom-confirm-button',
+            }
+        });
         return;
     }
 
     if (!productQuantity || productQuantity <= 0) {
-        alert('❌ Por favor, insira uma quantidade válida!');
+        // alert('❌ Por favor, insira uma quantidade válida!');
+        Swal.fire({
+            icon: "error",
+            title: "Por favor, insira uma quantidade válida!",
+            customClass: {
+                confirmButton: 'custom-confirm-button',
+            }
+        });
         return;
     }
 
@@ -156,7 +170,17 @@ function addToCart() {
     localStorage.setItem('cart', JSON.stringify(cart));
 
     // Feedback ao usuário
-    alert('✅ Produto adicionado a sacola!');
-    
+    // alert('✅ Produto adicionado a sacola!');
+
+    // NOVO ALERT
+    Swal.fire({
+        icon: "success",
+        title: "Produto adicionado a sacola",
+        text: "Vá para sacola!",
+        customClass: {
+            confirmButton: 'custom-confirm-button',
+        }
+    });
+    // NOVO ALERT
 }
 // ADICIONAR NA SACOLA

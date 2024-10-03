@@ -120,6 +120,21 @@
     /* box-shadow: 0 4px 18px rgba(0, 0, 0, 0.308); */
 }
 
+.swal2-popup {
+    font-family: poppinsregular;
+    color: #000;
+}
+.custom-confirm-button {
+    background-color: #4CAF50;        
+    border: none;              
+    padding: 10px 30px;        
+    font-size: 16px; 
+    font-family: poppinsregular;          
+  }
+  
+.custom-confirm-button:hover {
+    background-color: #45a049; /* Cor ao passar o mouse */
+}
 /* RESPONSIVE */
 @media screen and (max-width: 910px){
     .conteudo-camisa{
