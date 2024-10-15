@@ -176,9 +176,14 @@ function addToCart() {
     Swal.fire({
         icon: "success",
         title: "Produto adicionado a sacola",
-        text: "Vá para sacola!",
+        // text: "Vá para sacola!",
+        confirmButtonText: "Ir para a sacola",
         customClass: {
             confirmButton: 'custom-confirm-button',
+        }
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = "../pages/sacola.html"; // Substitua pelo seu link
         }
     });
     // NOVO ALERT

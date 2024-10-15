@@ -1,0 +1,14 @@
+header{
+    padding: 10px 30px 10px 30px;
+    display: flex;
+}
+.boas-vindas{
+    margin: 10px;
+}
+
+
+@media screen and (max-width: 710px){
+    header{
+        display: flex;
+    }
+}

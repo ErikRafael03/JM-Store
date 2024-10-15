@@ -11,6 +11,9 @@ body {
 .inicioC{
     position: relative;
 }
+.inicioC .nav-links a:hover{
+    color: #202020;
+}
 main {
     flex: 1;
     padding: 30px;

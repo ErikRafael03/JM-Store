@@ -87,3 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
     updateCartDisplay();
 });
 
+function finalizarCompra(){
+    window.location.href = "../pages/finalizar-compra.html";
+}
+
