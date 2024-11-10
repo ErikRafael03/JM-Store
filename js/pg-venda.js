@@ -173,19 +173,23 @@ function addToCart() {
     // alert('✅ Produto adicionado a sacola!');
 
     // NOVO ALERT
-    Swal.fire({
-        icon: "success",
-        title: "Produto adicionado a sacola",
-        // text: "Vá para sacola!",
-        confirmButtonText: "Ir para a sacola",
-        customClass: {
-            confirmButton: 'custom-confirm-button',
-        }
-    }).then((result) => {
-        if (result.isConfirmed) {
-            window.location.href = "../pages/sacola.html"; // Substitua pelo seu link
-        }
-    });
+    newFunction();
+
+    function newFunction() {
+        Swal.fire({
+            icon: "success",
+            title: "Produto adicionado à sacola",
+            confirmButtonText: "Ir para a sacola",
+            customClass: {
+                confirmButton: 'custom-confirm-button',
+            },
+            footer: '<a href="../pages/camisas.html">Continuar comprando</a>'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = "../pages/sacola.html"; // Substitua pelo seu link
+            }
+        });
+    }
     // NOVO ALERT
 }
 // ADICIONAR NA SACOLA

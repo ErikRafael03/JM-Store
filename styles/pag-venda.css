@@ -135,7 +135,10 @@
 }
 .swal2-popup a{
     text-decoration: none;     
-    color: white;
+    color: rgb(0, 0, 0);
+}
+.swal2-popup a:hover{
+    text-decoration: underline;     
 }
   
 .custom-confirm-button:hover {
